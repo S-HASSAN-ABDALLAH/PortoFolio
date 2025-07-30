@@ -1,25 +1,26 @@
 .buttons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 
-.btn {
-  background-color: #ad5389;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
+    .btn {
+        background-color: #ad5389;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
 
-.btn:hover {
-  background-color: #3c1053;
-}
+        &:hover {
+            background-color: #3c1053;
+        }
+    }
 
-.btn-outline {
-  border: 1px solid #a78bfa;
-  padding: 10px 20px;
-  color: #a78bfa;
-  text-decoration: none;
-  border-radius: 5px;
+    .btn-outline {
+        border: 1px solid #a78bfa;
+        padding: 10px 20px;
+        color: #a78bfa;
+        text-decoration: none;
+        border-radius: 5px;
+    }
 }
