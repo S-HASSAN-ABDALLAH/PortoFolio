@@ -3,51 +3,98 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #121212, #1e1e2f);
+ background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  /* background: linear-gradient(to right, #121212, #1e1e2f); */
   color: white;
   min-height: 100vh;
   padding: 20px;
 }
-
+/* 
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+} */
+
+/* تنسيق الـ Navbar */
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #121212; /* أو حسب لون موقعك */
+  border-radius: 20px;
+  font-size: 20px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #a78bfa;
+/* تنسيق الشعار */
+.logo img {
+  height: 60px;
 }
 
+/* قائمة الروابط */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 150px; /* المسافة بين الروابط */
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
-  color: #ddd;
+.nav-links li a {
   text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
   transition: color 0.3s;
 }
-.nav-links a:hover {
-  color: #a78bfa;
+
+.nav-links li a:hover {
+  color: #a78bfa; /* لون عند التمرير */
 }
 
 .hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
+  padding: 40px;
   flex-wrap: wrap;
 }
+
+
+.hero .image img {
+  max-width: 100%;
+  min-height: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* إن أردت جعل الصورة تشغل 50% */
+.hero .image {
+  width: 50%;
+  order: 2; /* الصورة على اليمين */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero .content {
+  width: 50%;
+  order: 1; /* النص على اليسار */
+}
+
+
+
 
 .content {
   max-width: 600px;
@@ -65,7 +112,8 @@ header nav {
   margin-bottom: 20px;
 }
 .content .job {
-  color: #facc15;
+  color: #a78bfa;
+;
 }
 
 .content p {
@@ -80,12 +128,17 @@ header nav {
   margin-bottom: 20px;
 }
 .btn {
-  background-color: #a78bfa;
-  color: #000;
+  background-color: #ad5389;
+  color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
 }
+
+.btn:hover {
+  background-color: #3c1053;
+}
+
 .btn-outline {
   border: 1px solid #a78bfa;
   padding: 10px 20px;
@@ -102,11 +155,4 @@ header nav {
 }
 .socials a:hover {
   color: #a78bfa;
-}
-
-.image img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid #a78bfa;
 }
