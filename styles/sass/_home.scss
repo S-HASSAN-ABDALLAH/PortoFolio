@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
- background: #ad5389;  /* fallback for old browsers */
+ background: #b1568d;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -27,40 +27,6 @@ header nav {
 } */
 
 /* تنسيق الـ Navbar */
-nav.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background-color: #121212; /* أو حسب لون موقعك */
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-/* تنسيق الشعار */
-.logo img {
-  height: 60px;
-}
-
-/* قائمة الروابط */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 150px; /* المسافة بين الروابط */
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-  color: #a78bfa; /* لون عند التمرير */
-}
 
 .hero {
   display: flex;
