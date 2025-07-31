@@ -3,23 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Shadah</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="/styles/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/webp" href="./assets/images/logo-web.webp">
 
 </head>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Shadah</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
 
 <body>
 
@@ -73,6 +65,38 @@
         </div>
     </section>
 
+    <!--About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">My Journey in Web Development</p>
+
+        <div class="about-card">
+            <p>
+                I'm an enthusiastic web and mobile developer passionate about creating digital experiences.
+                Currently mastering HTML, CSS, JavaScript, and modern frameworks while building practical projects
+                that showcase my growing skills.
+            </p>
+            <p>
+                My goal is to become a professional web and mobile developer and contribute to innovative projects.
+                I'm actively seeking internship opportunities where I can apply my knowledge, learn from experienced
+                developers,
+                and contribute to real-world applications.
+            </p>
+        </div>
+    </section>
+
+    <a href="#home" class="back-to-top" id="backToTop" title="Back to Home">
+        <i class="fa-solid fa-house"></i>
+    </a>
+
+
+
+
+
+
+
+
+
     <script>
         const burger = document.querySelector('.burger');
         const navLinks = document.querySelector('.nav-links');
@@ -80,6 +104,25 @@
         burger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
+
+
+
+        const backToTop = document.getElementById("backToTop");
+        const homeSection = document.getElementById("home");
+
+        window.addEventListener("scroll", () => {
+            const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
+            const scrollY = window.scrollY || window.pageYOffset;
+
+            // Affiche le bouton SI on est en dessous de la section Home
+            if (scrollY > homeBottom - 50) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+
     </script>
 
 

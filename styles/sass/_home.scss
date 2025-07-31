@@ -1,23 +1,23 @@
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
 
-}
+// }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
- background: #b1568d;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// body {
+//   font-family: 'Segoe UI', sans-serif;
+//  background: #b1568d;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
-  /* background: linear-gradient(to right, #121212, #1e1e2f); */
-  color: white;
-  min-height: 100vh;
-  padding: 20px;
-}
+//   /* background: linear-gradient(to right, #121212, #1e1e2f); */
+//   color: white;
+//   min-height: 100vh;
+//   padding: 20px;
+// }
 /* 
 header nav {
   display: flex;
@@ -28,97 +28,118 @@ header nav {
 
 /* تنسيق الـ Navbar */
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 40px;
-  flex-wrap: wrap;
-}
+// .hero {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 40px;
+//   padding: 40px;
+//   flex-wrap: wrap;
+// }
 
 
-.hero .image img {
-  max-width: 100%;
-  min-height: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
+// .hero .image img {
+//   max-width: 100%;
+//   min-height: 100%;
+//   height: auto;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+// }
 
-/* إن أردت جعل الصورة تشغل 50% */
-.hero .image {
-  width: 50%;
-  order: 2; /* الصورة على اليمين */
-  display: flex;
-  justify-content: flex-end;
-}
+// /* إن أردت جعل الصورة تشغل 50% */
+// .hero .image {
+//   width: 50%;
+//   order: 2; /* الصورة على اليمين */
+//   display: flex;
+//   justify-content: flex-end;
+// }
 
-.hero .content {
-  width: 50%;
-  order: 1; /* النص على اليسار */
-}
-
-
+// .hero .content {
+//   width: 50%;
+//   order: 1; /* النص على اليسار */
+// }
 
 
-.content {
-  max-width: 600px;
+
+
+// .content {
+//   max-width: 600px;
+// }
+
+// .content h1 {
+//   font-size: 40px;
+//   margin-bottom: 10px;
+// }
+// .content h1 span {
+//   color: #a78bfa;
+// }
+// .content h2 {
+//   font-size: 28px;
+//   margin-bottom: 20px;
+// }
+// .content .job {
+//   color: #a78bfa;
+// ;
+// }
+
+// .content p {
+//   margin-bottom: 20px;
+//   line-height: 1.6;
+//   color: #ccc;
+// }
+
+// .buttons {
+//   display: flex;
+//   gap: 15px;
+//   margin-bottom: 20px;
+// }
+// .btn {
+//   background-color: #ad5389;
+//   color: #fff;
+//   padding: 10px 20px;
+//   text-decoration: none;
+//   border-radius: 5px;
+// }
+
+// .btn:hover {
+//   background-color: #3c1053;
+// }
+
+// .btn-outline {
+//   border: 1px solid #a78bfa;
+//   padding: 10px 20px;
+//   color: #a78bfa;
+//   text-decoration: none;
+//   border-radius: 5px;
+// }
+
+// .socials a {
+//   margin-right: 15px;
+//   font-size: 20px;
+//   color: #ccc;
+//   transition: color 0.3s;
+// }
+// .socials a:hover {
+//   color: #a78bfa;
+// }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #bc8fff;
+  color: #2e003e;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: none;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: #9b6bff;
+    color: white;
+  }
 }
 
-.content h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-.content h1 span {
-  color: #a78bfa;
-}
-.content h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-.content .job {
-  color: #a78bfa;
-;
-}
-
-.content p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #ccc;
-}
-
-.buttons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-.btn {
-  background-color: #ad5389;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #3c1053;
-}
-
-.btn-outline {
-  border: 1px solid #a78bfa;
-  padding: 10px 20px;
-  color: #a78bfa;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.socials a {
-  margin-right: 15px;
-  font-size: 20px;
-  color: #ccc;
-  transition: color 0.3s;
-}
-.socials a:hover {
-  color: #a78bfa;
-}
