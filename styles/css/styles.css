@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* Reset */
+
+/* RESET DE BASE */
 * {
   margin: 0;
   padding: 0;
@@ -7,183 +8,180 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  background: #b1568d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3c1053, #ad5389); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* background: linear-gradient(to right, #121212, #1e1e2f); */
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2e003e, #1d0030);
   color: white;
-  min-height: 100vh;
-  padding: 20px;
 }
 
-/* 
-header nav {
+/* --- HEADER & NAVBAR --- */
+header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* espace entre logo et menu */
   align-items: center;
-  margin-bottom: 40px;
-} */
-/* تنسيق الـ Navbar */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 40px;
+  padding: 0 30px;
   flex-wrap: wrap;
 }
 
-.hero .image img {
-  max-width: 100%;
-  min-height: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* إن أردت جعل الصورة تشغل 50% */
-.hero .image {
-  width: 50%;
-  order: 2; /* الصورة على اليمين */
+.logo {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
 }
 
-.hero .content {
-  width: 50%;
-  order: 1; /* النص على اليسار */
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.content {
-  max-width: 600px;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.content h1 {
-  font-size: 40px;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #bc8fff;
+}
+
+/* --- BURGER ICON --- */
+.burger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  padding: 150px 20px 80px;
+  text-align: center;
+}
+
+.hero-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content-text h1 {
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-.content h1 span {
-  color: #a78bfa;
+.name-highlight {
+  color: #bc8fff;
 }
 
-.content h2 {
-  font-size: 28px;
+.hero-content-text h2 {
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
-.content .job {
-  color: #a78bfa;
+.job-title {
+  color: #ff9aff;
+  font-weight: 600;
 }
 
-.content p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #ccc;
+.hero-content-text p {
+  font-size: 1rem;
+  margin-bottom: 30px;
 }
 
-.buttons {
+.hero-buttons {
   display: flex;
   gap: 15px;
-  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.btn {
-  background-color: #ad5389;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #3c1053;
-}
-
-.btn-outline {
-  border: 1px solid #a78bfa;
-  padding: 10px 20px;
-  color: #a78bfa;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.socials a {
-  margin-right: 15px;
-  font-size: 20px;
-  color: #ccc;
-  transition: color 0.3s;
-}
-
-.socials a:hover {
-  color: #a78bfa;
-}
-
-nav.navbar {
-  display: flex;
-  justify-content: space-between;
+.hero-btn {
+  display: inline-flex;
   align-items: center;
-  padding: 15px 40px;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  /* أو حسب لون موقعك */
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-/* تنسيق الشعار */
-.logo img {
-  height: 70px;
-}
-
-/* قائمة الروابط */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 150px; /* المسافة بين الروابط */
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li a {
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 25px;
   text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
 }
 
-.nav-links li a:hover {
-  color: #a78bfa; /* لون عند التمرير */
+.hero-btn.primary {
+  background: #bc8fff;
+  color: #2e003e;
 }
 
-.buttons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-.buttons .btn {
-  background-color: #ad5389;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 2px;
-}
-.buttons .btn:hover {
-  background-color: #3c1053;
-}
-.buttons .btn-outline {
-  border: 1px solid #a78bfa;
-  padding: 10px 20px;
-  color: #a78bfa;
-  text-decoration: none;
-  border-radius: 5px;
+.hero-btn.secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------ */
+/*        RESPONSIVE        */
+/* ------------------------ */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row; /* pour garder le logo à gauche et burger à droite */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger {
+    display: block; /* afficher le burger sur mobile */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 70px; /* hauteur du header */
+    right: 0;
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* affichage lorsque le menu est ouvert */
+  }
+}

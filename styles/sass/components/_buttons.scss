@@ -1,3 +1,5 @@
+@use '../base/variable' as *;
+
 .buttons {
     display: flex;
     gap: 15px;
@@ -17,10 +19,13 @@
     }
 
     .btn-outline {
+     
         border: 1px solid #a78bfa;
         padding: 10px 20px;
         color: #a78bfa;
         text-decoration: none;
         border-radius: 5px;
+   
+        
     }
 }

@@ -1,0 +1,7 @@
+$primary-color: #0a0a0a;         // Pure void
+$deep-black: #121212;         // Deep structure
+$carbon-grey: #1a1a1a;        // Carbon fiber
+$steel-grey: #242424;         // Cold steel
+$ash-grey: #2a2a2a;           // Dark ash
+$primary-gradient: linear-gradient(135deg, $primary-color, $deep-black, $carbon-grey);
+$secondary-gradient: linear-gradient(135deg, $carbon-grey, $steel-grey);
