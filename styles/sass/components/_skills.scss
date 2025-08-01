@@ -1,0 +1,95 @@
+.skills-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #5e009f, #3d0066);
+
+  // 🎯 Section title
+  .section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  // ✏️ Subtitle
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+  }
+
+  // 🟪 Grid layout for skill cards
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  // 📦 Single skill card
+  .skill-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    // Hover effect
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    // Icon image
+    img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    // Skill title
+    h3 {
+      margin: 10px 0 5px;
+    }
+
+    // Skill description
+    p {
+      font-size: 0.9rem;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    // Decorative bottom bar
+    .skill-bar {
+      height: 4px;
+      background: #bc8fff;
+      border-radius: 2px;
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+// <!-- 🔽 Skills Section -->
+// <section id="skills" class="skills-section">
+
+//   <!-- 🔸 Main Title -->
+//   <h2 class="section-title">My Skills</h2>
+
+//   <!-- 🔹 Subtitle -->
+//   <p class="section-subtitle">Technologies I'm learning and developing</p>
+
+//   <!-- 🟪 Grid of skill cards -->
+//   <div class="skills-grid">
+
+//     <!-- 🧱 Skill card: HTML -->
+//     <div class="skill-card">
+//       <img src="./assets/icons/html5.png" alt="HTML5" />
+//       <h3>HTML5</h3>
+//       <p>Semantic markup and web structure</p>
+//       <div class="skill-bar"></div>
+//     </div>
+
+    
+
+//   </div>
+// </section>

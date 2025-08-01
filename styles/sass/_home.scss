@@ -122,6 +122,7 @@ header nav {
 // .socials a:hover {
 //   color: #a78bfa;
 // }
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -133,13 +134,22 @@ header nav {
   font-size: 22px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 999;
+  z-index: 9999;
   display: none;
-  transition: background 0.3s ease;
-
-  &:hover {
-    background-color: #9b6bff;
-    color: white;
-  }
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+&.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+&:hover {
+  background-color: #9b6bff;
+  color: white;
+}

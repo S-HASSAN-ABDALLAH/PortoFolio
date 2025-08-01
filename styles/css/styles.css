@@ -221,6 +221,24 @@ nav {
 section {
   scroll-margin-top: 100px;
 }
+/* Section My projects */
+.projects-section{
+  background: linear-gradient(135deg, #b06ab3, #4568dc);
+  color:white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projects-section h2{
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight:bold;
+}
+
+.projects-section p{
+  font-size: 18px;
+  opacity: 0.9;
+}
 
 
 
