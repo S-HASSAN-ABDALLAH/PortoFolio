@@ -221,25 +221,240 @@ nav {
 section {
   scroll-margin-top: 100px;
 }
-/* Section My projects */
-.projects-section{
-  background: linear-gradient(135deg, #b06ab3, #4568dc);
-  color:white;
-  padding: 60px 20px;
-  text-align: center;
+
+  
+/* ===== PROJECTS SECTION ===== */
+.projects-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #2e003e, #1d0030);
 }
 
-.projects-section h2{
-  font-size: 36px;
-  margin-bottom: 10px;
-  font-weight:bold;
+/* Projects Container */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 0 20px;
 }
 
-.projects-section p{
-  font-size: 18px;
-  opacity: 0.9;
+.underline {
+    width: 180px;
+    height: 4px;
+    background: #bc8fff;
+    margin: 10px auto 20px;
+    border-radius: 2px;
 }
 
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Project Image/Icon Section */
+.project-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+/* Background Colors for Icons */
+.bg-orange {
+    background: linear-gradient(135deg, #ff9a85 0%, #fad0c4 100%);
+}
+
+.bg-blue {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-green {
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.bg-pink {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.bg-cyan {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+.bg-purple {
+    background: linear-gradient(135deg, #bc8fff 0%, #9b6bff 100%);
+}
+
+/* Project Info */
+.project-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project-info p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* Tech Tags */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.tech-tag {
+    background: rgba(188, 143, 255, 0.2);
+    color: #bc8fff;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(188, 143, 255, 0.3);
+}
+
+/* Project Buttons */
+.project-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-project {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    flex: 1;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.btn-primary {
+    background: #bc8fff;
+    color: #2e003e;
+}
+
+.btn-primary:hover {
+    background: #9b6bff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(188, 143, 255, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-coming-soon {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ccc;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    cursor: not-allowed;
+}
+
+.btn-coming-soon:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .project-card {
+        margin: 0 5px;
+    }
+    
+    .project-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-project {
+        flex: none;
+        width: 100%;
+    }
+    
+    .project-info {
+        padding: 20px;
+    }
+    
+    .tech-tags {
+        gap: 6px;
+    }
+    
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 80px 15px;
+    }
+    
+    .project-icon {
+        font-size: 2.5rem;
+    }
+    
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-info p {
+        font-size: 0.9rem;
+    }
+}  
 
 
 
