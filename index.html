@@ -317,7 +317,7 @@
                 ravie d’échanger avec vous !</p>
         </div>
 
-        <!-- الـ 4 مستطيلات في الوسط -->
+        <!-- Les 4 rectangles au centre-->
         <div class="glass-container">
             <a href="mailto:shadah.hassan.abdallah@gmail.com" class="contact-link">
                 <div class="link-icon">
@@ -363,7 +363,7 @@
 
 
     <script>
-        // استبدل JavaScript الموجود بهذا الكود
+        
         const burger = document.querySelector('.burger');
         const navLinks = document.querySelector('.nav-links');
 
@@ -372,14 +372,14 @@
         });
 
         const backToTop = document.getElementById("backToTop");
-        const aboutSection = document.getElementById("about");  // غيّر من home إلى about
+        const aboutSection = document.getElementById("about");  
 
         window.addEventListener("scroll", () => {
-            // احسب نهاية قسم About
+            
             const aboutBottom = aboutSection.offsetTop + aboutSection.offsetHeight;
             const scrollY = window.scrollY || window.pageYOffset;
 
-            // اظهر الزر بعد انتهاء قسم About
+            // Afficher le bouton après la section À propos
             if (scrollY > aboutBottom - 999) {
                 backToTop.classList.add("show");
             } else {

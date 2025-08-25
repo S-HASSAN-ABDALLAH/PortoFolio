@@ -479,10 +479,6 @@ section {
 }
 
 
-
-
-
-
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -568,7 +564,7 @@ body::after {
     line-height: 1.6;
 }
 
-/* Container زجاجي كبير */
+/* Grand conteneur en verre */
 .glass-container {
     max-width: 1200px;
     width: 95%;
@@ -585,7 +581,7 @@ body::after {
     gap: 30px;
 }
 
-/* الـ 4 مستطيلات */
+/* Les 4 rectangles */
 .contact-link {
     display: flex;
     align-items: center;
