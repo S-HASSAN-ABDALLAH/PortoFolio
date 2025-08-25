@@ -8,7 +8,7 @@
 
 ## Aperçu du projet
 
-![Aperçu du portfolio](./images/screenshot.png)  
+![Aperçu du portfolio](./assets/images/Capture-d_écran-portfolio.webp)  
 *Exemple d'affichage sur desktop et mobile*
 
 ---
