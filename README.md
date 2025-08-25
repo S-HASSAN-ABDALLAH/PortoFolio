@@ -41,13 +41,13 @@ git clone https://github.com/S-HASSAN-ABDALLAH/PortoFolio
 
 Structure du projet
 /portfolio
-│── index.html
-│── /css
-│   └── style.css
-│── /images
-│   └── logo.png
-│── /js
-│   └── script.js
+├─ .vscode/ # Paramètres VS Code
+├─ assets/ # Images, documents
+├─ html/ # Pages HTML supplémentaires
+├─ styles/ # Fichiers CSS
+├─ index.html # Page principale du portfolio
+├─ main.js # Script principal en JavaScript
+└─ README.md # Documentation du projet
 
 Personnalisation
 
@@ -76,5 +76,5 @@ Shadah HASSAN-ABDALLAH
 ✉️ shadah.hassan.abdallah@gmail.com
 
 🔗 LinkedIn
- (https://linkedin.com/in/shadah-developpeuse)
+ https://linkedin.com/in/shadah-developpeuse
 
