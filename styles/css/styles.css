@@ -623,6 +623,17 @@ body::after {
     font-family: 'Inter', sans-serif;
 }
 
+.glass-container .link-icon i {
+    color: #FFB6C1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease; /* تأثير سلس عند تغيير اللون */
+}
+
+.glass-container .contact-link:hover .link-icon i {
+    color: #FF69B4; /* يصبح الوردي أكثر حدة عند المرور بالفأرة */
+}
+
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .glass-container {
@@ -691,10 +702,6 @@ footer {
   color: #fff;             /* couleur du texte */
   font-size: 14px;
 }
-
-
-
-
 
 
 html {
